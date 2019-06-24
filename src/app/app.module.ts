@@ -1,22 +1,28 @@
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { SearchComponent } from './search/search.component';
+import { ItemsComponent } from './items/items.component';
+
 
 @NgModule({
   imports: [
     BrowserModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MDBBootstrapModule.forRoot()
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    SearchComponent
+    SearchComponent,
+    ItemsComponent
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  schemas: [ NO_ERRORS_SCHEMA ]
 })
 export class AppModule { }
 

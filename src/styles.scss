@@ -1,7 +1,5 @@
 /* Global Styles */
 
-@import '~bootstrap/dist/css/bootstrap.min.css';
-
 * {
   font-family: 'Roboto', Arial, sans-serif;
   color: #616161;
@@ -122,6 +120,25 @@ app-top-bar {
 app-top-bar h1 {
   color: white;
   margin: 0;
+}
+
+app-search {
+  margin-top: 50px;
+}
+
+app-search label {
+  font-size: 15px;
+}
+
+app-search input[type="text"] {
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 30px;
+}
+
+app-items {
+  margin-top: 30px;
 }
 
 
